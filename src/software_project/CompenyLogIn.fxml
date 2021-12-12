@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="0.0" prefWidth="426.0" stylesheets="@cssstyling.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.CompenyLogIn">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="810.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/ef50f52e6220294ff1e95a6dddbc564d.gif" />
+         </image>
+      </ImageView>
+      <TextField fx:id="companyID" layoutX="304.0" layoutY="219.0" prefHeight="38.0" prefWidth="166.0" promptText="Compeny ID">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="304.0" layoutY="282.0" prefHeight="38.0" prefWidth="166.0" promptText="password">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="342.0" layoutY="356.0" mnemonicParsing="false" onAction="#go_on" prefHeight="38.0" prefWidth="91.0" text="go on" />
+      <ImageView fx:id="image" fitHeight="126.0" fitWidth="146.0" layoutX="328.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/5TZzjAXp7q3B.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="296.0" layoutY="406.0" prefHeight="38.0" prefWidth="195.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

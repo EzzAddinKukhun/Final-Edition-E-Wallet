@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.CompanyMainVeiw">
+   <children>
+      <ImageView fitHeight="443.0" fitWidth="719.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/rebecca-mock-main-street.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagebill" fitHeight="99.0" fitWidth="115.0" layoutX="323.0" layoutY="143.0" onMouseClicked="#go_to_bills" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/bill.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagehistory" fitHeight="99.0" fitWidth="99.0" layoutX="34.0" layoutY="143.0" onMouseClicked="#go_to_history" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/306456.png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

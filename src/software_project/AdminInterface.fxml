@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="906.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.AdminInterface">
+   <children>
+      <Label fx:id="username" layoutX="365.0" layoutY="83.0" prefHeight="88.0" prefWidth="236.0" text="ADMIN" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="60.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6699ff" height="36.0" stroke="#6699ff" strokeType="INSIDE" width="906.0" />
+      <Label layoutX="6.0" layoutY="-2.0" prefHeight="40.0" prefWidth="83.0" text="Date :">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="691.0" layoutY="-2.0" prefHeight="40.0" prefWidth="83.0" text="Time:">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="DateToday" layoutX="101.0" layoutY="-2.0" prefHeight="40.0" prefWidth="264.0" text="Date :">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="CurrentTime" layoutX="784.0" layoutY="-2.0" prefHeight="40.0" prefWidth="116.0" text="Time:">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="TOP" layoutX="233.0" layoutY="221.0" onAction="#addNewUser" prefHeight="102.0" prefWidth="174.0" style="-fx-background-radius: 5em;" text="New User">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/add-user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="438.0" layoutY="221.0" onAction="#addNewCompney" prefHeight="102.0" prefWidth="174.0" style="-fx-background-radius: 5em;" text="New Company">
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="63.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/icon-enterprise-company-name-ico-11563503074ctayiq52av.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="350.0" layoutY="356.0" onAction="#deposit" prefHeight="102.0" prefWidth="174.0" style="-fx-background-radius: 5em;" text="deposit/withdraw">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/gross.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

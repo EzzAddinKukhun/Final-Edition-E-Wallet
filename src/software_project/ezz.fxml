@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="432.0" prefWidth="606.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.ezz">
+   <children>
+      <VBox layoutX="138.0" layoutY="72.0" prefHeight="256.0" prefWidth="323.0">
+         <children>
+            <TextField fx:id="idTf" prefHeight="42.0" prefWidth="270.0" promptText="ID" style="-fx-background-color: #00000;" />
+            <TextField fx:id="dateTf" prefHeight="42.0" prefWidth="270.0" promptText="Date" style="-fx-background-color: #00000;" />
+            <TextField fx:id="timeTf" prefHeight="42.0" prefWidth="270.0" promptText="Time" style="-fx-background-color: #0;" />
+            <TextField fx:id="fromcurrencyTf" prefHeight="42.0" prefWidth="270.0" promptText="From (NIS, USD, JD)" style="-fx-background-color: #0;" />
+            <TextField fx:id="tocurrencyTf" prefHeight="42.0" prefWidth="270.0" promptText="To (NIS, USD, JD)" style="-fx-background-color: #0;" />
+            <TextField fx:id="amountTf" prefHeight="42.0" prefWidth="270.0" promptText="Amount" style="-fx-background-color: #0;" />
+         </children>
+      </VBox>
+      <Label layoutX="236.0" layoutY="14.0" prefHeight="43.0" prefWidth="126.0" text="Exchange">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="90.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/id%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="90.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/calendar%20(6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="90.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/chronometer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="90.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/receive-amount.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="90.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/gross.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exchangeBtn" layoutX="236.0" layoutY="347.0" mnemonicParsing="false" onAction="#exchangeBtnPressed" prefHeight="32.0" prefWidth="111.0" text="Exchange" />
+      <Label fx:id="statusLabel" layoutX="141.0" layoutY="387.0" prefHeight="18.0" prefWidth="323.0" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

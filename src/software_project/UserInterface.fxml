@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="897.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.UserInterface">
+   <children>
+      <Label fx:id="username" layoutX="348.0" layoutY="33.0" prefHeight="66.0" prefWidth="217.0" text="UserName" textAlignment="CENTER">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="bankID" layoutX="371.0" layoutY="99.0" prefHeight="36.0" prefWidth="172.0" text="BankID" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="TOP" layoutX="198.0" layoutY="215.0" onAction="#transferMoney" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Transfer Money" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/transfer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="449.0" layoutY="215.0" onAction="#payService" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Pay Service" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/bill.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="198.0" layoutY="307.0" onAction="#showTransactions" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Show Transactions" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/money-transfer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="449.0" layoutY="307.0" onAction="#showNotifications" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Notifications" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/notification.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="198.0" layoutY="399.0" onAction="#showExchangeRate" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Exchange Rate" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/exchange.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fx:id="snake" onMouseClicked="#snake" fitHeight="88.0" fitWidth="104.0" layoutX="499.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/4505688.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

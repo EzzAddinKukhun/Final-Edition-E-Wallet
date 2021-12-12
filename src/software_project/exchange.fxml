@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="782.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.exchange">
+   <children>
+      <Label layoutX="293.0" layoutY="20.0" prefHeight="46.0" prefWidth="240.0" text="Exchange Rate" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <VBox layoutX="216.0" layoutY="82.0" prefHeight="411.0" prefWidth="394.0">
+         <children>
+            <JFXTextField fx:id="ID" labelFloat="true" promptText="ID">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXDatePicker fx:id="Date" prefHeight="40.0" prefWidth="394.0" promptText="Date">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </JFXDatePicker>
+            <JFXTimePicker fx:id="Time" prefHeight="28.0" prefWidth="523.0" promptText="Time">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTimePicker>
+            <JFXComboBox fx:id="currency1" prefHeight="38.0" prefWidth="394.0" promptText="From Currency">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="currency2" prefHeight="40.0" prefWidth="394.0" promptText="To Currency">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="amount" labelFloat="true" promptText="Amount">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="146.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/id%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="146.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/calendar%20(6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="144.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/chronometer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="146.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/receive-amount.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="155.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/gross.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="286.0" layoutY="506.0" onAction="#exchange" prefHeight="28.0" prefWidth="166.0" style="-fx-background-color: #6699ff; -fx-background-radius: 5em;" text="Exhange">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

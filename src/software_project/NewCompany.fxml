@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="1007.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.NewCompany">
+   <children>
+      <Label fx:id="war" layoutX="367.0" layoutY="503.0" prefHeight="32.0" prefWidth="222.0" />
+      <ImageView fitHeight="647.0" fitWidth="1007.0" opacity="0.33" pickOnBounds="true">
+         <image>
+            <Image url="@../imgs/company.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="308.0" layoutY="51.0" prefHeight="46.0" prefWidth="461.0" text="Registration Of New Company" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <VBox layoutX="70.0" layoutY="151.0" prefHeight="282.0" prefWidth="394.0">
+         <children>
+            <TextField fx:id="id1" promptText="ID">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="name" promptText="Name">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="email" promptText="Email">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="password" promptText="Password">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+      </VBox>
+      <VBox layoutX="538.0" layoutY="151.0" prefHeight="267.0" prefWidth="394.0">
+         <children>
+            <TextField fx:id="pnumber" promptText="Phone Number">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="country" promptText="Country">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="city" prefHeight="6.0" prefWidth="394.0" promptText="City">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="Bank_ID" prefHeight="6.0" prefWidth="394.0" promptText="Bank ID">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button layoutX="395.0" layoutY="542.0" onAction="#SAVE" prefHeight="28.0" prefWidth="166.0" style="-fx-background-color: #6699ff; -fx-background-radius: 5em;" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password2" layoutX="306.0" layoutY="451.0" prefHeight="40.0" prefWidth="394.0" promptText="Confirm Password">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

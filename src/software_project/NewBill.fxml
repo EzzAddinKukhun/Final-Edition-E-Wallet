@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.NewBill">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="856.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/6608b9ecff858d3b1ccb13ca4276eff237707584212c7a493fc2c031c18b2112.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Ser_name" layoutX="53.0" layoutY="181.0" prefHeight="38.0" prefWidth="219.0" promptText="Enter Service Name" />
+      <TextField fx:id="amount" layoutX="53.0" layoutY="259.0" prefHeight="38.0" prefWidth="219.0" promptText="Enter Bill Amount" />
+      <Label layoutX="53.0" layoutY="149.0" prefHeight="32.0" prefWidth="166.0" text="Service name ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="219.0" prefHeight="32.0" prefWidth="166.0" text="amount">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="297.0" prefHeight="32.0" prefWidth="166.0" text="Date ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="97.0" layoutY="381.0" mnemonicParsing="false" onAction="#newBill" prefHeight="32.0" prefWidth="95.0" text="submit" />
+      <Label fx:id="label" layoutX="80.0" layoutY="397.0" prefHeight="32.0" prefWidth="166.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="company_name" layoutX="309.0" layoutY="14.0" prefHeight="36.0" prefWidth="142.0" text="COMPANY">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="73.0" prefHeight="32.0" prefWidth="166.0" text="ID">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PersonID" layoutX="54.0" layoutY="111.0" prefHeight="38.0" prefWidth="219.0" promptText="Person ID" />
+   </children>
+</AnchorPane>

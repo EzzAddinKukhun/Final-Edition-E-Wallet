@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="408.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.Accept">
+   <children>
+      <Label layoutX="13.0" layoutY="45.0" prefHeight="78.0" prefWidth="392.0" text="Are you sure that you will pay this bill? ">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="209.0" layoutY="144.0" onMouseClicked="#Accept" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/check%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="138.0" layoutY="141.0" onMouseClicked="#notAccept" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/cancel%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
